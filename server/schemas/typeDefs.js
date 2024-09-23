@@ -3,13 +3,13 @@ const typeDefs = `
         _id: ID
         username: String
         email: String
-        bookcount: Int
+        bookCount: Int
         savedBooks: [Book]
     }
 
     type Book {
         bookId: String
-        author: [String] // might be wrong look up later
+        author: [String]
         description: String
         title: String
         image: String
