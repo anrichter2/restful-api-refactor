@@ -36,13 +36,13 @@ const resolvers = {
 
             return { token, user };
         },
-        saveBook: async (parent, { bookId, author, description, title, image, link }, context) => {
+        saveBook: async (parent, { bookId, authors, description, title, image, link }, context) => {
             if (context.user) {
                 return User.findOneAndUpdate(
                     { _id: context.user._id },
                     {
                         $addToSet: {
-                            savedBooks: { bookId, author, description, title, image, link },
+                            savedBooks: { bookId, authors, description, title, image, link },
                         },
                     },
                     {

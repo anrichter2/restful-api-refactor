@@ -37,7 +37,7 @@ const LoginForm = () => {
         variables: {
           email: userFormData.email,
           password: userFormData.password,
-        }
+        },
       });
       console.log(data)
 
