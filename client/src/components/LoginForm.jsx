@@ -31,9 +31,15 @@ const LoginForm = () => {
     }
 
     try {
+      console.log(userFormData)
+      console.log(userFormData.email)
       const {data} = await loginUser({
-        variables: { ...userFormData }
+        variables: {
+          email: userFormData.email,
+          password: userFormData.password,
+        }
       });
+      console.log(data)
 
       // if (!response.ok) {
       //   throw new Error('something went wrong!');
