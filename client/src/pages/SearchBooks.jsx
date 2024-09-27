@@ -48,7 +48,6 @@ const SearchBooks = () => {
       }
 
       const { items } = await response.json();
-      console.log(items)
 
       const bookData = items.map((book) => ({
         bookId: book.id,
@@ -69,7 +68,6 @@ const SearchBooks = () => {
   const handleSaveBook = async (bookId) => {
     // find the book in `searchedBooks` state by the matching id
     const bookToSave = searchedBooks.find((book) => book.bookId === bookId);
-    console.log(bookToSave)
 
     // get token
     const token = Auth.loggedIn() ? Auth.getToken() : null;

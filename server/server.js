@@ -6,7 +6,6 @@ const { expressMiddleware } = require('@apollo/server/express4');
 const { authMiddleWare } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 
-// const routes = require('./routes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -42,11 +41,3 @@ const startApolloServer = async () => {
 };
 
 startApolloServer();
-
-// if we're in production, serve client/build as static assets
-
-// app.use(routes);
-
-// db.once('open', () => {
-//   app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
-// });
