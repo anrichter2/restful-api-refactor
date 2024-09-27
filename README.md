@@ -12,13 +12,13 @@ No installation is needed
 
 Below are screenshots showing the login screen, sign-up screen, a book search screen, and a users saved books screen.
 
-![Login Screen]()
+![Login Screen](./client/src/assets/images/login-page.png)
 
-![Sign-up Screen]()
+![Sign-up Screen](./client/src/assets/images/sign-up-page.png)
 
-![Book Search Screen]()
+![Book Search Screen](./client/src/assets/images/book-search-page.png)
 
-![Saved Books Screen]()
+![Saved Books Screen](./client/src/assets/images/saved-books-page.png)
 
 ## Credits
 

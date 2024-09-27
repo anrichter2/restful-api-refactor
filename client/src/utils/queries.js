@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client'
 
+// Query for finding the users' personal data on savedBooks page
 export const  GET_ME = gql`
     query me {
         me {
@@ -9,7 +10,7 @@ export const  GET_ME = gql`
             bookCount
             savedBooks {
                 bookId
-                author
+                authors
                 description
                 title
                 image
